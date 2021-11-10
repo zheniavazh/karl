@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Zen Kurenaido";
+  src: url(./fonts/ZenKurenaido-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.app_container {
+  background-color: #f1d3bc;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+.app_wrapper {
+  width: 1250px;
+  margin: 0 auto;
+}

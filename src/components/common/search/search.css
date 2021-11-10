@@ -1,0 +1,20 @@
+.search {
+  width: 100%;
+  margin-left: 20px;
+  padding: 5px 10px;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  background-color: white;
+  border: 5px solid #262f34;
+  outline: none;
+  color: #262f34;
+}
+
+input::-webkit-input-placeholder {
+  color: #262f34;
+}
+
+input::-moz-placeholder {
+  color: #262f34;
+}
