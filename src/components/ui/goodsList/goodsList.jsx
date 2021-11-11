@@ -3,7 +3,7 @@ import "./goodsList.css";
 
 const GoodsList = ({ goods }) => {
   return goods.map((good) => (
-    <div className="main_goods_item">
+    <div key={good.id} className="main_goods_item">
       <img
         className="main_goods_item_img"
         src={`./goods/${good.id}.png`}

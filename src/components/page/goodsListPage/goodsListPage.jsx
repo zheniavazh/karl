@@ -5,6 +5,8 @@ import API from "../../../api";
 import GoodsList from "../../ui/goodsList/goodsList";
 import GroupList from "../../common/groupList/groupList";
 import Search from "../../common/search/search";
+import { paginate } from "../../../utils/paginate";
+import Pagination from "../../common/pagination/pagination";
 
 const GoodsListPage = () => {
   const [goods, setGoods] = useState([]);
@@ -12,6 +14,8 @@ const GoodsListPage = () => {
   const [selectedCategory, setSelectedCategory] = useState();
   const [searchData, setSearchData] = useState("");
   const [sortBy, setSortBy] = useState("");
+  const pageSize = 6;
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     API.goods.fetchAll().then((data) => setGoods(data));
@@ -23,6 +27,7 @@ const GoodsListPage = () => {
   const handleCategorySelect = (item) => {
     if (searchData !== "") setSearchData("");
     setSelectedCategory(item);
+    setCurrentPage(1);
   };
 
   const handleChange = ({ target }) => {
@@ -32,6 +37,11 @@ const GoodsListPage = () => {
 
   const handleSort = (order) => {
     setSortBy(order);
+    setCurrentPage(1);
+  };
+
+  const handlePageChange = (pageIndex) => {
+    setCurrentPage(pageIndex);
   };
 
   if (goods) {
@@ -48,8 +58,15 @@ const GoodsListPage = () => {
       : goods;
     const clearFilter = () => {
       setSelectedCategory();
+      setCurrentPage(1);
     };
+    const count = filteredGoods.length;
     const sortedGoods = _.orderBy(filteredGoods, ["price"], [sortBy]);
+    const goodsCrop = paginate(
+      sortBy ? sortedGoods : filteredGoods,
+      currentPage,
+      pageSize
+    );
 
     return (
       <div className="main">
@@ -85,7 +102,15 @@ const GoodsListPage = () => {
             )}
             <div className="main_content-right">
               <div className="main_goods">
-                <GoodsList goods={sortBy ? sortedGoods : filteredGoods} />
+                <GoodsList goods={goodsCrop} />
+              </div>
+              <div className="main_pagination">
+                <Pagination
+                  itemsCount={count}
+                  pageSize={pageSize}
+                  currentPage={currentPage}
+                  onPageChange={handlePageChange}
+                />
               </div>
             </div>
           </div>

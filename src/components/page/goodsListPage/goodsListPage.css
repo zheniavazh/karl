@@ -29,6 +29,9 @@
 
 .main_content-right {
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main_goods {

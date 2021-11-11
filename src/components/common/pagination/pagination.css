@@ -1,20 +1,22 @@
-.group_list {
-  list-style: none;
-  padding: 10px 10px 10px 20px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+.pagination {
+  display: flex;
+  margin: 10px 0;
 }
 
-.group_list_item {
+.page_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   font-size: 30px;
-  padding: 5px;
   background-color: #262f34;
   border: 5px solid #262f34;
   color: white;
   cursor: pointer;
 }
 
-.group_list_item-active {
+.page_item-active {
   background-color: white;
   border: 5px solid #262f34;
   color: #262f34;
