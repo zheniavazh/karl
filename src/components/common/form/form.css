@@ -1,0 +1,39 @@
+.form_input {
+  width: 100%;
+  padding: 5px 10px;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #f1d3bc;
+  border: 5px solid #262f34;
+  outline: none;
+  color: #262f34;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form_icon-show {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.form_feedback {
+  font-size: 25px;
+  color: #f34a4a;
+}
+
+.form_checkbox {
+  margin-top: 20px;
+}
+
+.form_checkbox_icon {
+  cursor: pointer;
+}
+
+.form_checkbox_text {
+  margin-left: 15px;
+}

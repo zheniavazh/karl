@@ -1,12 +1,12 @@
 .nav {
   background-color: #262f34;
-  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .nav-list-left,

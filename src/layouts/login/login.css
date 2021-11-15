@@ -1,0 +1,22 @@
+.form {
+  width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border: 5px solid #262f34;
+  padding: 50px;
+  font-size: 30px;
+  color: #262f34;
+}
+
+.form_heading {
+  font-size: 50px;
+  margin: 0 50px;
+}
+
+.form_button {
+  cursor: pointer;
+}
+
+.form_button:hover {
+  font-weight: bold;
+}

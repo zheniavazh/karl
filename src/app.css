@@ -5,9 +5,22 @@
   font-weight: normal;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .app_container {
   background-color: #f1d3bc;
   font-family: "Zen Kurenaido", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_main {
+  flex-grow: 1;
 }
 
 .app_wrapper {
