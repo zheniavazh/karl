@@ -18,4 +18,4 @@ const fetchAll = () =>
     }, 2000);
   });
 
-export { fetchAll };
+export default { fetchAll };

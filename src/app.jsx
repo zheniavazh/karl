@@ -14,8 +14,10 @@ const App = () => {
       <div className="app_main">
         <Switch>
           <Route path="/" exact component={Main} />
+          <Route path="/goods" exact render={() => <Redirect to="/" />} />
+          <Route path="/goods/:goodId?" component={Main} />
           <Route path="/cart" component={Cart} />
-          <Route path="/:type?" component={Login} />
+          <Route path="/log/:type?" component={Login} />
           <Redirect to="/" />
         </Switch>
       </div>

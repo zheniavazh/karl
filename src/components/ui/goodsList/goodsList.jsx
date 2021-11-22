@@ -1,9 +1,19 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "./goodsList.css";
 
 const GoodsList = ({ goods }) => {
+  const history = useHistory();
+  const handleClick = (id) => {
+    history.push(`goods/${id}`);
+  };
+
   return goods.map((good) => (
-    <div key={good.id} className="main_goods_item">
+    <div
+      key={good.id}
+      className="main_goods_item"
+      onClick={() => handleClick(good.id)}
+    >
       <img
         className="main_goods_item_img"
         src={`./goods/${good.id}.png`}

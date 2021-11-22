@@ -5,6 +5,7 @@
   background-color: white;
   padding: 10px 10px 10px 20px;
   border: 5px solid #262f34;
+  cursor: pointer;
 }
 
 .main_goods_item_img {

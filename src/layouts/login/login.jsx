@@ -15,7 +15,7 @@ const Login = () => {
     setFormType((prevState) =>
       prevState === "register" ? "login" : "register"
     );
-    history.push(`/${formType === "register" ? "login" : "register"}`);
+    history.push(`/${formType === "register" ? "log/login" : "log/register"}`);
   };
 
   return (
