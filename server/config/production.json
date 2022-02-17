@@ -1,0 +1,6 @@
+{
+    "port": 8080,
+    "mongoUri": "mongodb+srv://ZheniaVazhenina:ZV12345678@cluster0.ququz.mongodb.net/app?retryWrites=true&w=majority",
+    "accessSecret": "access secret key",
+    "refreshSecret": "refresh secret key"
+}
