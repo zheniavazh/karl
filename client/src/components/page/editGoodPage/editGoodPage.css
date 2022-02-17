@@ -1,0 +1,11 @@
+.form_controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form_controls .button {
+    font-family: inherit;
+    width: 48%;
+    cursor: pointer;
+}

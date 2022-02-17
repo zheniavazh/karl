@@ -1,45 +1,45 @@
 .good {
-  width: 1000px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px;
-  border: 5px solid #262f34;
-  display: grid;
-  grid-template-columns: 30% 70%;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #262f34;
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
 .good_img {
-  width: 100%;
+    width: 100%;
 }
 
 .good_info {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .good_info_name {
-  font-size: 50px;
-  margin: 0 50px 50px;
+    font-size: 50px;
+    margin: 0 50px 50px;
 }
 
 .good_info_price {
-  font-size: 80px;
-  margin: 0 50px;
-  color: #f34a4a;
+    font-size: 80px;
+    margin: 0 50px;
+    color: #f34a4a;
 }
 
 .good_button {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: normal;
-  font-size: 35px;
-  background-color: #262f34;
-  border: 5px solid #262f34;
-  color: white;
-  cursor: pointer;
-  margin: 20px 50px 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 35px;
+    background-color: #262f34;
+    border: 5px solid #262f34;
+    color: white;
+    cursor: pointer;
+    margin: 20px 50px 0;
 }

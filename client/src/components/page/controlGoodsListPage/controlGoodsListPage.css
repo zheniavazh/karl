@@ -1,0 +1,21 @@
+.control_goods {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: space-between;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: white;
+    border: 5px solid #262f34;
+    color: #262f34;
+    margin-top: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.cart_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods_list {
+    width: 600px;
+}
+
+.goods_list .main_goods_item {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.goods_list .main_goods_item_img {
+    height: 300px;
+    width: auto;
+}
+
+.goods_list .main_goods_item_info {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.goods_list .main_goods_item_info_price {
+    align-self: flex-start;
+}
+
+.cart_info {
+    width: 560px;
+}
+
+.cart_text {
+    font-size: 40px;
+}

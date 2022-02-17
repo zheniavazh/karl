@@ -1,29 +1,29 @@
 @font-face {
-  font-family: "Zen Kurenaido";
-  src: url(./fonts/ZenKurenaido-Regular.ttf);
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Zen Kurenaido";
+    src: url(./fonts/ZenKurenaido-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .app_container {
-  background-color: #f1d3bc;
-  font-family: "Zen Kurenaido", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    background-color: #f1d3bc;
+    font-family: "Zen Kurenaido", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .app_main {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .app_wrapper {
-  width: 1250px;
-  margin: 0 auto;
+    width: 1250px;
+    margin: 0 auto;
 }

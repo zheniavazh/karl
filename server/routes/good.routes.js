@@ -13,6 +13,17 @@ router.get("/", async (req, res) => {
     }
 });
 
+router.post("/", async (req, res) => {
+    try {
+        const newGood = await Good.create(req.body);
+        res.status(201).send(newGood);
+    } catch (error) {
+        res.status(500).json({
+            message: "На сервере произошла ошибка. Попробуйте позже.",
+        });
+    }
+});
+
 router.patch("/:id", async (req, res) => {
     try {
         const { id } = req.params;
@@ -21,6 +32,20 @@ router.patch("/:id", async (req, res) => {
                 new: true,
             });
             res.send(updatedGood);
+        }
+    } catch (error) {
+        res.status(500).json({
+            message: "На сервере произошла ошибка. Попробуйте позже.",
+        });
+    }
+});
+
+router.delete("/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+        if (id) {
+            const deletedGood = await Good.findByIdAndRemove(id, req.body);
+            res.send(deletedGood);
         }
     } catch (error) {
         res.status(500).json({

@@ -1,20 +1,20 @@
 .group_list {
-  list-style: none;
-  margin-bottom: 20px;
+    list-style: none;
+    margin-bottom: 20px;
 }
 
 .group_list_item {
-  font-size: 30px;
-  padding: 10px 20px;
-  background-color: #262f34;
-  border: 5px solid #262f34;
-  color: white;
-  cursor: pointer;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #262f34;
+    border: 5px solid #262f34;
+    color: white;
+    cursor: pointer;
 }
 
 .group_list_item-active {
-  background-color: white;
-  border: 5px solid #262f34;
-  color: #262f34;
-  font-weight: bold;
+    background-color: white;
+    border: 5px solid #262f34;
+    color: #262f34;
+    font-weight: bold;
 }

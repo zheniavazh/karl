@@ -1,17 +1,17 @@
 .form_submit {
-  font-family: "Zen Kurenaido", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 5px 50px;
-  margin: 20px 0;
-  background-color: #262f34;
-  border: 5px solid #262f34;
-  color: white;
-  cursor: pointer;
+    font-family: "Zen Kurenaido", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 50px;
+    margin: 20px 0;
+    background-color: #262f34;
+    border: 5px solid #262f34;
+    color: white;
+    cursor: pointer;
 }
 
 a {
-  display: block;
-  text-decoration: underline;
-  cursor: pointer;
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
 }
